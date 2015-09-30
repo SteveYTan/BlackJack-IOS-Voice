@@ -14,6 +14,19 @@
 		801261DF1A615373001E8618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801261DD1A615373001E8618 /* Main.storyboard */; };
 		801261E41A615373001E8618 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 801261E21A615373001E8618 /* LaunchScreen.xib */; };
 		801261F01A615373001E8618 /* WitAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801261EF1A615373001E8618 /* WitAITests.swift */; };
+		83D52FA41B8E183D00280F3F /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F971B8E183D00280F3F /* SocketAckManager.swift */; };
+		83D52FA51B8E183D00280F3F /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F981B8E183D00280F3F /* SocketAnyEvent.swift */; };
+		83D52FA61B8E183D00280F3F /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F991B8E183D00280F3F /* SocketEngine.swift */; };
+		83D52FA71B8E183D00280F3F /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F9A1B8E183D00280F3F /* SocketEngineClient.swift */; };
+		83D52FA81B8E183D00280F3F /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F9B1B8E183D00280F3F /* SocketEventHandler.swift */; };
+		83D52FA91B8E183D00280F3F /* SocketFixUTF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F9C1B8E183D00280F3F /* SocketFixUTF8.swift */; };
+		83D52FAA1B8E183D00280F3F /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F9D1B8E183D00280F3F /* SocketIOClient.swift */; };
+		83D52FAB1B8E183D00280F3F /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F9E1B8E183D00280F3F /* SocketLogger.swift */; };
+		83D52FAC1B8E183D00280F3F /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52F9F1B8E183D00280F3F /* SocketPacket.swift */; };
+		83D52FAD1B8E183D00280F3F /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52FA01B8E183D00280F3F /* SocketParser.swift */; };
+		83D52FAE1B8E183D00280F3F /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52FA11B8E183D00280F3F /* SocketTypes.swift */; };
+		83D52FAF1B8E183D00280F3F /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52FA21B8E183D00280F3F /* SwiftRegex.swift */; };
+		83D52FB01B8E183D00280F3F /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D52FA31B8E183D00280F3F /* WebSocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,16 +42,29 @@
 /* Begin PBXFileReference section */
 		3007767BEA05744256264756 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		800061B01AB2E3200059EBD4 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
-		801261D41A615373001E8618 /* WitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WitAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801261D41A615373001E8618 /* BlackJack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		801261D81A615373001E8618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		801261D91A615373001E8618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		801261DB1A615373001E8618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		801261DE1A615373001E8618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		801261E31A615373001E8618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		801261E91A615373001E8618 /* WitAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WitAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		801261E91A615373001E8618 /* BlackJack.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackJack.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		801261EE1A615373001E8618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		801261EF1A615373001E8618 /* WitAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitAITests.swift; sourceTree = "<group>"; };
 		83001C38700DF746E649C5BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		83D52F971B8E183D00280F3F /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		83D52F981B8E183D00280F3F /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		83D52F991B8E183D00280F3F /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		83D52F9A1B8E183D00280F3F /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		83D52F9B1B8E183D00280F3F /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		83D52F9C1B8E183D00280F3F /* SocketFixUTF8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketFixUTF8.swift; sourceTree = "<group>"; };
+		83D52F9D1B8E183D00280F3F /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		83D52F9E1B8E183D00280F3F /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		83D52F9F1B8E183D00280F3F /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		83D52FA01B8E183D00280F3F /* SocketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParser.swift; sourceTree = "<group>"; };
+		83D52FA11B8E183D00280F3F /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		83D52FA21B8E183D00280F3F /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = "<group>"; };
+		83D52FA31B8E183D00280F3F /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		A4E06C5C50D2C6959A8F9C92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,8 +118,8 @@
 		801261D51A615373001E8618 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				801261D41A615373001E8618 /* WitAI.app */,
-				801261E91A615373001E8618 /* WitAITests.xctest */,
+				801261D41A615373001E8618 /* BlackJack.app */,
+				801261E91A615373001E8618 /* BlackJack.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +127,7 @@
 		801261D61A615373001E8618 /* WitAI */ = {
 			isa = PBXGroup;
 			children = (
+				83D52F961B8E182400280F3F /* socketio */,
 				801261D91A615373001E8618 /* AppDelegate.swift */,
 				801261DB1A615373001E8618 /* ViewController.swift */,
 				801261DD1A615373001E8618 /* Main.storyboard */,
@@ -136,12 +163,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		83D52F961B8E182400280F3F /* socketio */ = {
+			isa = PBXGroup;
+			children = (
+				83D52F971B8E183D00280F3F /* SocketAckManager.swift */,
+				83D52F981B8E183D00280F3F /* SocketAnyEvent.swift */,
+				83D52F991B8E183D00280F3F /* SocketEngine.swift */,
+				83D52F9A1B8E183D00280F3F /* SocketEngineClient.swift */,
+				83D52F9B1B8E183D00280F3F /* SocketEventHandler.swift */,
+				83D52F9C1B8E183D00280F3F /* SocketFixUTF8.swift */,
+				83D52F9D1B8E183D00280F3F /* SocketIOClient.swift */,
+				83D52F9E1B8E183D00280F3F /* SocketLogger.swift */,
+				83D52F9F1B8E183D00280F3F /* SocketPacket.swift */,
+				83D52FA01B8E183D00280F3F /* SocketParser.swift */,
+				83D52FA11B8E183D00280F3F /* SocketTypes.swift */,
+				83D52FA21B8E183D00280F3F /* SwiftRegex.swift */,
+				83D52FA31B8E183D00280F3F /* WebSocket.swift */,
+			);
+			name = socketio;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		801261D31A615373001E8618 /* WitAI */ = {
+		801261D31A615373001E8618 /* BlackJack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 801261F31A615373001E8618 /* Build configuration list for PBXNativeTarget "WitAI" */;
+			buildConfigurationList = 801261F31A615373001E8618 /* Build configuration list for PBXNativeTarget "BlackJack" */;
 			buildPhases = (
 				5525FEDAD93161933AF5436F /* Check Pods Manifest.lock */,
 				801261D01A615373001E8618 /* Sources */,
@@ -153,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = WitAI;
+			name = BlackJack;
 			productName = WitAI;
-			productReference = 801261D41A615373001E8618 /* WitAI.app */;
+			productReference = 801261D41A615373001E8618 /* BlackJack.app */;
 			productType = "com.apple.product-type.application";
 		};
-		801261E81A615373001E8618 /* WitAITests */ = {
+		801261E81A615373001E8618 /* BlackJackTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 801261F61A615373001E8618 /* Build configuration list for PBXNativeTarget "WitAITests" */;
+			buildConfigurationList = 801261F61A615373001E8618 /* Build configuration list for PBXNativeTarget "BlackJackTests" */;
 			buildPhases = (
 				801261E51A615373001E8618 /* Sources */,
 				801261E61A615373001E8618 /* Frameworks */,
@@ -171,9 +218,9 @@
 			dependencies = (
 				801261EB1A615373001E8618 /* PBXTargetDependency */,
 			);
-			name = WitAITests;
+			name = BlackJackTests;
 			productName = WitAITests;
-			productReference = 801261E91A615373001E8618 /* WitAITests.xctest */;
+			productReference = 801261E91A615373001E8618 /* BlackJack.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,11 +229,13 @@
 		801261CC1A615373001E8618 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Aaron Abentheuer";
 				TargetAttributes = {
 					801261D31A615373001E8618 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = QE68H226Q3;
 					};
 					801261E81A615373001E8618 = {
 						CreatedOnToolsVersion = 6.2;
@@ -194,7 +243,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 801261CF1A615373001E8618 /* Build configuration list for PBXProject "WitAI" */;
+			buildConfigurationList = 801261CF1A615373001E8618 /* Build configuration list for PBXProject "BlackJack" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -207,8 +256,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				801261D31A615373001E8618 /* WitAI */,
-				801261E81A615373001E8618 /* WitAITests */,
+				801261D31A615373001E8618 /* BlackJack */,
+				801261E81A615373001E8618 /* BlackJackTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,8 +320,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D52FAA1B8E183D00280F3F /* SocketIOClient.swift in Sources */,
+				83D52FA41B8E183D00280F3F /* SocketAckManager.swift in Sources */,
+				83D52FA71B8E183D00280F3F /* SocketEngineClient.swift in Sources */,
+				83D52FAF1B8E183D00280F3F /* SwiftRegex.swift in Sources */,
+				83D52FB01B8E183D00280F3F /* WebSocket.swift in Sources */,
+				83D52FA61B8E183D00280F3F /* SocketEngine.swift in Sources */,
 				801261DC1A615373001E8618 /* ViewController.swift in Sources */,
+				83D52FAC1B8E183D00280F3F /* SocketPacket.swift in Sources */,
+				83D52FA81B8E183D00280F3F /* SocketEventHandler.swift in Sources */,
+				83D52FAB1B8E183D00280F3F /* SocketLogger.swift in Sources */,
+				83D52FA91B8E183D00280F3F /* SocketFixUTF8.swift in Sources */,
+				83D52FAE1B8E183D00280F3F /* SocketTypes.swift in Sources */,
+				83D52FA51B8E183D00280F3F /* SocketAnyEvent.swift in Sources */,
 				801261DA1A615373001E8618 /* AppDelegate.swift in Sources */,
+				83D52FAD1B8E183D00280F3F /* SocketParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +351,7 @@
 /* Begin PBXTargetDependency section */
 		801261EB1A615373001E8618 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 801261D31A615373001E8618 /* WitAI */;
+			target = 801261D31A615373001E8618 /* BlackJack */;
 			targetProxy = 801261EA1A615373001E8618 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -398,9 +460,13 @@
 			baseConfigurationReference = 3007767BEA05744256264756 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WitAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BlackJack;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = WitAIObjCBridgingHeader.h;
 			};
 			name = Debug;
@@ -410,9 +476,13 @@
 			baseConfigurationReference = 83001C38700DF746E649C5BE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WitAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BlackJack;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = WitAIObjCBridgingHeader.h;
 			};
 			name = Release;
@@ -431,8 +501,8 @@
 				);
 				INFOPLIST_FILE = WitAITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WitAI.app/WitAI";
+				PRODUCT_NAME = BlackJack;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackJack.app/BlackJack";
 			};
 			name = Debug;
 		};
@@ -446,15 +516,15 @@
 				);
 				INFOPLIST_FILE = WitAITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WitAI.app/WitAI";
+				PRODUCT_NAME = BlackJack;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackJack.app/BlackJack";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		801261CF1A615373001E8618 /* Build configuration list for PBXProject "WitAI" */ = {
+		801261CF1A615373001E8618 /* Build configuration list for PBXProject "BlackJack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				801261F11A615373001E8618 /* Debug */,
@@ -463,7 +533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		801261F31A615373001E8618 /* Build configuration list for PBXNativeTarget "WitAI" */ = {
+		801261F31A615373001E8618 /* Build configuration list for PBXNativeTarget "BlackJack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				801261F41A615373001E8618 /* Debug */,
@@ -472,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		801261F61A615373001E8618 /* Build configuration list for PBXNativeTarget "WitAITests" */ = {
+		801261F61A615373001E8618 /* Build configuration list for PBXNativeTarget "BlackJackTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				801261F71A615373001E8618 /* Debug */,
